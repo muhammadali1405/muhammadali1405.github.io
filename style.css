@@ -1,0 +1,213 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: none;    
+}
+.cursor{
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgb(153, 0, 255);;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+@media (max-width: 800px) {
+    /* for Mobile */
+    .dashboard {
+      flex-direction: column;
+    }
+    .main-left{
+        padding: 50px 0 0 10%;
+        width: 100%;
+    }
+    .about-content{
+        text-align: center;
+    } 
+    .content {
+        padding: 0 10px;
+        background-color: #faf7ff;
+        border-radius: 10px;
+    }
+    .about-me{
+        margin: 50px 0 0 0;
+    }
+    .skill-wrapper{
+        width: 100%;
+        border-radius: 10px;
+        background: #faf7ff;
+    }
+}
+
+@media (min-width: 800px) {
+    /* for Desktop */
+    .main-left{
+        padding: 50px 0 0 3%;
+        color: rgb(9, 9, 51);
+        width: 350px;
+        height: 100vh;
+    }
+    .canvas{
+        background: #ececef;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+    .about-content{
+        width: 600px;
+        text-align: center;
+    }
+    .content {
+        padding: 0 18px;
+        background-color: #e4d6ff;
+        border-radius: 10px;
+        margin-left: 10px;
+    }
+    .about-me{
+        margin: 75px 0 0 0;
+    }
+    .skills{
+        width: 600px;
+    }
+    .skill-wrapper{
+        width: 400px;
+        border-radius: 10px;
+        background: #faf7ff;
+        margin-left: 15px;
+    }
+    .float{
+        float: left;
+    }
+    
+}
+.image{
+    width: 235px;
+    height: 248px;
+    overflow: hidden;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.0px );
+    -webkit-backdrop-filter: blur( 13.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.dp{
+    width: 230px;
+}
+.thumbnail{
+    width: 20px;
+}
+.phone, .email, .github, .location, .education 
+{
+    margin: 5px;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+ 
+.link-hover{
+    border-radius: 50%;
+}
+
+
+
+h1{ /*change font family of heading*/
+	font-family: sans-serif;
+}
+
+li{ /*style the li tag*/
+	list-style-type: none;
+	font-family: sans-serif;
+}
+
+.skills{ /*style the text*/
+	width: 300px;
+	/*margin: 60px auto;*/
+	color: rgb(28, 7, 104);
+    margin: 40px;
+    padding: 10px;
+}
+
+.skills li{ /*set margin of li*/
+	margin: 20px 0;
+}
+
+.bar{ /*style the bar*/
+	background-color: #e0c6ff;
+	display: block;
+	height: 6px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 53px;
+	overflow: hidden;
+}
+
+.bar span{ /*style the span tag*/
+	height: 6px;
+	float: left;
+	background-color: #29075b;
+}
+
+.python{ /*set skills and animation of html*/
+	width: 80%;
+	animation: python 2s;
+}
+
+.javascript{ /*set skills and animation of css*/
+	width: 80%;
+	animation: javascript 2s;
+}
+
+.nodejs{ /*set skills and animation of javascript*/
+	width: 75%;
+	animation: nodejs 2s;
+}
+
+.reactjs{ /*set skills and animation of jquery*/
+	width: 70%;
+	animation: reactjs 2s;
+}
+
+@keyframes python{ /*animate html skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+
+@keyframes javascript{ /*animate css skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 80%;
+	}
+}
+
+@keyframes nodejs{ /*animate javascript skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 75%;
+	}
+}
+
+@keyframes reactjs{ /*animate jquery skills*/
+	0%{
+		width: 0%;
+	}
+
+	100%{
+		width: 70%;
+	}
+}

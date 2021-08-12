@@ -2,8 +2,7 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    cursor: none;    
+    font-family: 'Poppins', sans-serif;  
 }
 .cursor{
     width: 30px;
@@ -78,6 +77,9 @@
     }
     .float{
         float: left;
+    }
+    *{
+        cursor: none;  
     }
     
 }

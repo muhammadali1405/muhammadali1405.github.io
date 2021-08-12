@@ -4,14 +4,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;  
 }
-.cursor{
-    width: 30px;
-    height: 30px;
-    border: 2px solid rgb(153, 0, 255);;
-    position: absolute;
-    transform: translate(-50%,-50%);
-    pointer-events: none;
-}
 @media (max-width: 800px) {
     /* for Mobile */
     .dashboard {
@@ -80,6 +72,14 @@
     }
     *{
         cursor: none;  
+    }
+    .cursor{
+        width: 30px;
+        height: 30px;
+        border: 2px solid rgb(153, 0, 255);;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        pointer-events: none;
     }
     
 }

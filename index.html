@@ -33,7 +33,7 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Muhammad Ali Nazarudeen</h1>
-                <p class="job-title">DevOps Engineer</p>
+                <p class="job-title">Senior DevOps Engineer</p>
                 <p class="hero-description">Passionate DevOps professional with expertise in cloud infrastructure, containerization, and continuous integration/deployment</p>
                 <div class="hero-buttons">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
@@ -41,8 +41,24 @@
                 </div>
                 <div class="social-links">
                     <a href="https://github.com/muhammadali1405" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="mailto:ali.nazarudeen14@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="tel:8606143897" title="Phone"><i class="fas fa-phone"></i></a>
+                    <a href="#" onclick="showContactPopup(event, 'ali.nazarudeen14@gmail.com', 'mailto:ali.nazarudeen14@gmail.com')" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" onclick="showContactPopup(event, '+91 8606143897', 'tel:8606143897')" title="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="skills-showcase">
+                    <p class="skills-label">Technology Stack</p>
+                    <div class="skills-icons">
+                        <div class="skill-icon" data-skill="Azure" title="Azure"><i class="fab fa-microsoft"></i></div>
+                        <div class="skill-icon" data-skill="GCP" title="GCP"><i class="fab fa-google"></i></div>
+                        <div class="skill-icon" data-skill="Azure DevOps" title="Azure DevOps"><i class="fab fa-microsoft"></i></div>
+                        <div class="skill-icon" data-skill="Github Actions" title="Github Actions"><i class="fab fa-github"></i></div>
+                        <div class="skill-icon" data-skill="Python" title="Python"><i class="fab fa-python"></i></div>
+                        <div class="skill-icon" data-skill="Git" title="Git"><i class="fab fa-git-alt"></i></div>
+                        <div class="skill-icon" data-skill="Prometheus" title="Prometheus"><i class="fas fa-chart-line"></i></div>
+                        <div class="skill-icon" data-skill="Grafana" title="Grafana"><i class="fas fa-tachometer-alt"></i></div>
+                        <div class="skill-icon" data-skill="Kubernetes" title="Kubernetes"><i class="fas fa-cubes"></i></div>
+                        <div class="skill-icon" data-skill="Docker" title="Docker"><i class="fab fa-docker"></i></div>
+                        <div class="skill-icon" data-skill="MongoDB" title="MongoDB"><i class="fas fa-database"></i></div>
+                    </div>
                 </div>
             </div>
             <div class="hero-image">
@@ -69,12 +85,10 @@
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                    <h3>Scripting</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">Shell Scripting</span>
-                        <span class="skill-tag">JavaScript</span>
                     </div>
                 </div>
 
@@ -83,10 +97,10 @@
                     <div class="skill-tags">
                         <span class="skill-tag">Docker</span>
                         <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">AWS</span>
                         <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">GCP</span>
                         <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">GitLab CI/CD</span>
+                        <span class="skill-tag">GitHub Actions</span>
                     </div>
                 </div>
 
@@ -95,22 +109,12 @@
                     <div class="skill-tags">
                         <span class="skill-tag">Git</span>
                         <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Terraform</span>
-                        <span class="skill-tag">Ansible</span>
+                        <span class="skill-tag">ARM Templates</span>
+                        <span class="skill-tag">Grafana</span>
                         <span class="skill-tag">Prometheus</span>
-                        <span class="skill-tag">ELK Stack</span>
                     </div>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Web Technologies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">NodeJS</span>
-                        <span class="skill-tag">ReactJS</span>
-                        <span class="skill-tag">REST APIs</span>
-                        <span class="skill-tag">MongoDB</span>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -123,14 +127,14 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>DevOps Engineer</h3>
-                        <p class="company">Your Company Name</p>
-                        <p class="date">Month Year - Present</p>
+                        <h3>Developer II, DevOps Engineering</h3>
+                        <p class="company">UST Global</p>
+                        <p class="date">March 2025 - Present</p>
                         <ul class="responsibilities">
-                            <li>Designed and implemented CI/CD pipelines using Jenkins and GitLab CI</li>
-                            <li>Managed containerized applications with Docker and Kubernetes</li>
-                            <li>Implemented infrastructure as code using Terraform and Ansible</li>
-                            <li>Optimized cloud infrastructure on AWS, reducing costs by 30%</li>
+                            <li>Worked as part of team building automated systems for building, testing, and deploying software. These systems were built using GitHub Actions, which helped us make our development process smoother and more efficient.</li>
+                            <li> Leveraged a centralized repository for Helm charts and configuration files, streamlining version control and ensuring consistent deployments across environments for Kubernetes applications.</li>
+                            <li>Managed regular production deployments and optimized operational efficiency, ensuring consistent system performance and reliability</li>
+                            <li>Troubleshooting and providing technical support for services deployed within Google Kubernetes Engine(GKE) and Azure Kubernetes Service (AKS) environments.</li>
                         </ul>
                     </div>
                 </div>
@@ -138,14 +142,17 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <h3>Junior DevOps Engineer</h3>
-                        <p class="company">Previous Company</p>
-                        <p class="date">Month Year - Month Year</p>
+                        <h3>Senior DevOps Engineer</h3>
+                        <p class="company">Valoriz Digital(Mozanta Technologies)</p>
+                        <p class="date">September 2021 - March 2025</p>
                         <ul class="responsibilities">
-                            <li>Maintained and monitored production servers and infrastructure</li>
-                            <li>Assisted in deployment and release management processes</li>
-                            <li>Implemented monitoring solutions with Prometheus and Grafana</li>
-                            <li>Collaborated with development teams to automate build processes</li>
+                            <li>Led the development and implementation of numerous advanced CI/CD pipelines in Azure DevOps, enhancing system reliability and deployment efficiency by 30%.</li>
+                            <li>Successfully maintained 99.9% uptime for a suite of over 200 microservices by refining and automating monitoring and alerting processes.</li>
+                            <li>Oversaw cloud infrastructure, including the management of VMs, network configurations, and storage solutions, ensuring system scalability and stability.</li>
+                            <li>Implemented new technologies and process improvements in Azure cloud platform, achieving a 25% improvement in security posture and operational efficiency.</li>
+                            <li>Led Troubleshooting and supporting pipeline and microservice issues in AKS, reducing downtime by 40%.</li>
+                            <li>Established effective collaboration processes across departments, facilitating contributions that led to a 15% improvement in project delivery timelines.</li>
+                            <li>Analyzed and monitored monthly metrics and KPIs, resulting in a consistent application of operational standards and a 10% improvement in service level adherence.</li>
                         </ul>
                     </div>
                 </div>
@@ -159,17 +166,17 @@
             <h2 class="section-title">Certifications</h2>
             <div class="certifications-grid">
                 <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
+                    <img class="cert-icon" src="/assets/az305.png" alt="Azure Solutions Architect Expert">
                     <h3>Microsoft Certified: Azure Solutions Architect Expert</h3>
                     <button class="cert-btn" onclick="window.open('https://learn.microsoft.com/api/credentials/share/en-us/MuhammadAliNazarudeen-9299/C3F2E31D3D09FE15?sharingId=F710D48779C3A5E8', '_blank')">Show Certificate</button>
                 </div>
                 <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
+                    <img class="cert-icon" src="/assets/az104.webp" alt="Azure Administrator Associate">
                     <h3>Microsoft Certified: Azure Administrator Associate</h3>
                     <button class="cert-btn" onclick="window.open('https://learn.microsoft.com/api/credentials/share/en-us/MuhammadAliNazarudeen-9299/8F23A8D8991011CF?sharingId=F710D48779C3A5E8', '_blank')">Show Certificate</button>
                 </div>
                 <div class="certification-card">
-                    <i class="fas fa-certificate"></i>
+                    <img class="cert-icon" src="/assets/github-actions.svg" alt="GitHub Actions">
                     <h3>GitHub Actions</h3>
                     <button class="cert-btn" onclick="window.open('https://learn.microsoft.com/en-us/users/muhammadalinazarudeen-9299/credentials/2f89a0fe0c50977c?ref=https%3A%2F%2Fwww.linkedin.com%2F', '_blank')">Show Certificate</button>
                 </div>
@@ -188,8 +195,9 @@
                         <p class="degree">B.Tech in Computer Science & Engineering</p>
                     </div>
                     <p class="institution">UKF College of Engineering, Kerala</p>
-                    <p class="graduation">Graduation: 2022</p>
-                    <p class="gpa">CGPA: 7.5+</p>
+                    <p class="university">APJ Abdul Kalam Technological University, Kerala</p>
+                    <p class="graduation">Graduation: 2021</p>
+                    <p class="gpa">CGPA: 6.5</p>
                 </div>
             </div>
         </div>
@@ -208,14 +216,14 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p><a href="mailto:ali.nazarudeen14@gmail.com">ali.nazarudeen14@gmail.com</a></p>
+                            <p><a href="#" onclick="showContactPopup(event, 'ali.nazarudeen14@gmail.com', 'mailto:ali.nazarudeen14@gmail.com')">ali.nazarudeen14@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
                             <h4>Phone</h4>
-                            <p><a href="tel:8606143897">+91 8606143897</a></p>
+                            <p><a href="#" onclick="showContactPopup(event, '+91 8606143897', 'tel:8606143897')">+91 8606143897</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -237,10 +245,18 @@
         </div>
     </section>
 
+    <!-- Contact Popup Modal -->
+    <div id="contactPopup" class="contact-popup">
+        <div class="popup-content">
+            <button class="popup-btn popup-open" onclick="handleContactAction('open')">Open</button>
+            <button class="popup-btn popup-copy" onclick="handleContactAction('copy')">Copy</button>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Muhammad Ali Nazarudeen. All rights reserved.</p>
+            <p>&copy; 2026 Muhammad Ali Nazarudeen. All rights reserved.</p>
         </div>
     </footer>
 

@@ -7,95 +7,259 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <title>Muhammad Ali N - DevOps Engineer</title>
 </head>
 <body>
-    <div class="cursor"></div>
-    <div class="canvas">
-        <div class="main-left">
-            <h1>Muhammad Ali <span style="color: rgb(153, 0, 255);">.</span></h1>
-            <h1>Nazarudeen</h1>
-            <br>
-            <div class="image">
-                <img class="dp" src="/assets/ali.png" alt="">
-            </div>
-            <br>
-            <div class="dashboard">
-                <div class="phone">
-                    <img class="thumbnail" src="/assets/phone.png" alt="">
-                    &nbsp
-                    8606143897
-                </div>
-                <div class="email">
-                    <img src="/assets/mail.png" alt="" class="thumbnail">
-                    &nbsp
-                    ali.nazarudeen14@gmail.com
-                </div>
-                <div class="github">
-                    <img src="/assets/github.png" alt="" class="thumbnail">
-                    <a class="hover-item" style="text-decoration: none;" href="https://github.com/muhammadali1405/"> 
-                        &nbsp
-                        muhammadali1405 
-                    </a>
-                </div>
-                <div class="location">
-                    <img src="/assets/location.png" alt="" class="thumbnail">
-                    &nbsp
-                    Quilon, Kerala, India
-                </div>
-                <div class="education">
-                    <img src="/assets/graduation-hat.png" alt="" class="thumbnail">
-                    &nbsp 
-                    UKF college of Engineering
-                </div>
-            </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Muhammad Ali <span>.</span></div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
+    </nav>
 
-        <div class="main-right">
-            <div class="about-me">
-                <div class="content">
-                <p class="about-content">
-                    Seeking a challenging position in an organization where i can use my talents and skills to grow and expand the organization as well as myself.
-                </p>
-                </div> 
-            </div> 
-            <div class="float">
-                <div class="skill-wrapper">
-                    <div class="skills">  <!-- create a div -->
-                        <p style="text-decoration: underline;"> SKILLS </p>
-                        <li>
-                            <p>Python</p><span class="bar"><span class="python"></span></span> <!-- skill bar 1 -->
-                        </li>
-                    
-                        <li>
-                            <p>JavaScript</p><span class="bar"><span class="javascript"></span></span><!-- skill bar 2 -->
-                        </li>
-                    
-                        <li>
-                            <p>NodeJS</p><span class="bar"><span class="nodejs"></span></span><!-- skill bar 3 -->
-                        </li>
-                    
-                        <li>
-                            <p>ReactJS</p><span class="bar"><span class="reactjs"></span></span><!-- skill bar 4 -->
-                        </li>
-                    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Muhammad Ali Nazarudeen</h1>
+                <p class="job-title">Senior DevOps Engineer</p>
+                <p class="hero-description">Passionate DevOps professional with expertise in cloud infrastructure, containerization, and continuous integration/deployment</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="/assets/CV.MuhammadAli.N-DevOps.pdf" class="btn btn-secondary" download>Download CV</a>
                 </div>
-                <div class="skill-wrapper">
-                    <div class="skills">  <!-- create a div -->
-                        <p style="text-decoration: underline;">PROJECTS</p>
-                        <li>
-                            <a href="https://www.jetir.org/papers/JETIR2106133.pdf">
-                                Silent Speech Interface for Differently Abled
-                            </a>
-                        </li>
+                <div class="social-links">
+                    <a href="https://github.com/muhammadali1405" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" onclick="showContactPopup(event, 'ali.nazarudeen14@gmail.com', 'mailto:ali.nazarudeen14@gmail.com')" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" onclick="showContactPopup(event, '+91 8606143897', 'tel:8606143897')" title="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+                <div class="skills-showcase">
+                    <p class="skills-label">Technology Stack</p>
+                    <div class="skills-icons">
+                        <div class="skill-icon" data-skill="Azure" title="Azure"><i class="fab fa-microsoft"></i></div>
+                        <div class="skill-icon" data-skill="GCP" title="GCP"><i class="fab fa-google"></i></div>
+                        <div class="skill-icon" data-skill="Azure DevOps" title="Azure DevOps"><i class="fab fa-microsoft"></i></div>
+                        <div class="skill-icon" data-skill="Github Actions" title="Github Actions"><i class="fab fa-github"></i></div>
+                        <div class="skill-icon" data-skill="Python" title="Python"><i class="fab fa-python"></i></div>
+                        <div class="skill-icon" data-skill="Git" title="Git"><i class="fab fa-git-alt"></i></div>
+                        <div class="skill-icon" data-skill="Prometheus" title="Prometheus"><i class="fas fa-chart-line"></i></div>
+                        <div class="skill-icon" data-skill="Grafana" title="Grafana"><i class="fas fa-tachometer-alt"></i></div>
+                        <div class="skill-icon" data-skill="Kubernetes" title="Kubernetes"><i class="fas fa-cubes"></i></div>
+                        <div class="skill-icon" data-skill="Docker" title="Docker"><i class="fab fa-docker"></i></div>
+                        <div class="skill-icon" data-skill="MongoDB" title="MongoDB"><i class="fas fa-database"></i></div>
                     </div>
                 </div>
             </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img class="profile-img" src="/assets/ali.png" alt="Muhammad Ali">
+                </div>
+            </div>
         </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <p>I'm a results-driven DevOps engineer with a strong foundation in software development and infrastructure management. I specialize in designing and implementing scalable cloud solutions, automating deployments, and optimizing system performance. With expertise in Docker, Kubernetes, CI/CD pipelines, and cloud platforms, I help organizations streamline their development processes and achieve operational excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Scripting</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Shell Scripting</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>DevOps & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">GCP</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">GitHub Actions</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">ARM Templates</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">Prometheus</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Developer II, DevOps Engineering</h3>
+                        <p class="company">UST Global</p>
+                        <p class="date">March 2025 - Present</p>
+                        <ul class="responsibilities">
+                            <li>Worked as part of team building automated systems for building, testing, and deploying software. These systems were built using GitHub Actions, which helped us make our development process smoother and more efficient.</li>
+                            <li> Leveraged a centralized repository for Helm charts and configuration files, streamlining version control and ensuring consistent deployments across environments for Kubernetes applications.</li>
+                            <li>Managed regular production deployments and optimized operational efficiency, ensuring consistent system performance and reliability</li>
+                            <li>Troubleshooting and providing technical support for services deployed within Google Kubernetes Engine(GKE) and Azure Kubernetes Service (AKS) environments.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Senior DevOps Engineer</h3>
+                        <p class="company">Valoriz Digital(Mozanta Technologies)</p>
+                        <p class="date">September 2021 - March 2025</p>
+                        <ul class="responsibilities">
+                            <li>Led the development and implementation of numerous advanced CI/CD pipelines in Azure DevOps, enhancing system reliability and deployment efficiency by 30%.</li>
+                            <li>Successfully maintained 99.9% uptime for a suite of over 200 microservices by refining and automating monitoring and alerting processes.</li>
+                            <li>Oversaw cloud infrastructure, including the management of VMs, network configurations, and storage solutions, ensuring system scalability and stability.</li>
+                            <li>Implemented new technologies and process improvements in Azure cloud platform, achieving a 25% improvement in security posture and operational efficiency.</li>
+                            <li>Led Troubleshooting and supporting pipeline and microservice issues in AKS, reducing downtime by 40%.</li>
+                            <li>Established effective collaboration processes across departments, facilitating contributions that led to a 15% improvement in project delivery timelines.</li>
+                            <li>Analyzed and monitored monthly metrics and KPIs, resulting in a consistent application of operational standards and a 10% improvement in service level adherence.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <img class="cert-icon" src="/assets/az305.png" alt="Azure Solutions Architect Expert">
+                    <h3>Microsoft Certified: Azure Solutions Architect Expert</h3>
+                    <button class="cert-btn" onclick="window.open('https://learn.microsoft.com/api/credentials/share/en-us/MuhammadAliNazarudeen-9299/C3F2E31D3D09FE15?sharingId=F710D48779C3A5E8', '_blank')">Show Certificate</button>
+                </div>
+                <div class="certification-card">
+                    <img class="cert-icon" src="/assets/az104.webp" alt="Azure Administrator Associate">
+                    <h3>Microsoft Certified: Azure Administrator Associate</h3>
+                    <button class="cert-btn" onclick="window.open('https://learn.microsoft.com/api/credentials/share/en-us/MuhammadAliNazarudeen-9299/8F23A8D8991011CF?sharingId=F710D48779C3A5E8', '_blank')">Show Certificate</button>
+                </div>
+                <div class="certification-card">
+                    <img class="cert-icon" src="/assets/github-actions.svg" alt="GitHub Actions">
+                    <h3>GitHub Actions</h3>
+                    <button class="cert-btn" onclick="window.open('https://learn.microsoft.com/en-us/users/muhammadalinazarudeen-9299/credentials/2f89a0fe0c50977c?ref=https%3A%2F%2Fwww.linkedin.com%2F', '_blank')">Show Certificate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <div class="education-header">
+                        <h3>Bachelor of Technology</h3>
+                        <p class="degree">B.Tech in Computer Science & Engineering</p>
+                    </div>
+                    <p class="institution">UKF College of Engineering, Kerala</p>
+                    <p class="university">APJ Abdul Kalam Technological University, Kerala</p>
+                    <p class="graduation">Graduation: 2021</p>
+                    <p class="gpa">CGPA: 6.5</p>
+                </div>
+            </div>
+        </div>
+    </section>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="#" onclick="showContactPopup(event, 'ali.nazarudeen14@gmail.com', 'mailto:ali.nazarudeen14@gmail.com')">ali.nazarudeen14@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="#" onclick="showContactPopup(event, '+91 8606143897', 'tel:8606143897')">+91 8606143897</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Trivandrum, Kerala, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/muhammadali1405" target="_blank">github.com/muhammadali1405</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Popup Modal -->
+    <div id="contactPopup" class="contact-popup">
+        <div class="popup-content">
+            <button class="popup-btn popup-open" onclick="handleContactAction('open')">Open</button>
+            <button class="popup-btn popup-copy" onclick="handleContactAction('copy')">Copy</button>
+        </div>
     </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Muhammad Ali Nazarudeen. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 <script src="./index.js"></script>
 </html>

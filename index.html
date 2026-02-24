@@ -245,10 +245,11 @@
     <!-- Contact Popup Modal -->
     <div id="contactPopup" class="contact-popup">
         <button class="popup-close" onclick="closeContactPopup()" title="Close"><i class="fas fa-times"></i></button>
+        <div class="popup-contact-type" id="contactType"></div>
         <div class="popup-content">
-            <button class="popup-btn popup-open" onclick="handleContactAction('open')" title="Open"><i id="openIcon" class="fas fa-phone"></i></button>
-            <button class="popup-btn popup-copy" onclick="handleContactAction('copy')" title="Copy"><i class="fas fa-copy"></i></button>
-            <button class="popup-btn popup-whatsapp" onclick="handleContactAction('whatsapp')" id="whatsappBtn" title="WhatsApp" style="display:none;"><i class="fab fa-whatsapp"></i></button>
+            <button class="popup-btn popup-open" onclick="handleContactAction('open')" title="Open"><i id="openIcon" class="fas fa-phone"></i><span class="btn-label" id="openLabel">Call</span></button>
+            <button class="popup-btn popup-copy" onclick="handleContactAction('copy')" title="Copy"><i class="fas fa-copy"></i><span class="btn-label">Copy</span></button>
+            <button class="popup-btn popup-whatsapp" onclick="handleContactAction('whatsapp')" id="whatsappBtn" title="WhatsApp" style="display:none;"><i class="fab fa-whatsapp"></i><span class="btn-label">WhatsApp</span></button>
         </div>
     </div>
 

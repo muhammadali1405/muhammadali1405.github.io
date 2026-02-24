@@ -723,6 +723,21 @@ body {
     transform: rotate(90deg);
 }
 
+.popup-contact-type {
+    display: none;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .popup-contact-type {
+        display: block;
+    }
+}
+
 .popup-btn {
     flex: 1;
     padding: 0.75rem 1.5rem;
@@ -732,6 +747,17 @@ body {
     cursor: pointer;
     font-size: 0.95rem;
     transition: all 0.3s ease;
+}
+
+.btn-label {
+    display: none;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .btn-label {
+        display: inline;
+    }
 }
 
 .popup-open {
@@ -1031,7 +1057,12 @@ body {
         width: 100%;
         height: auto;
         border-radius: 8px;
-        padding: 0.6rem;
+        padding: 0.75rem 1rem;
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
     }
 
     .contact-item {

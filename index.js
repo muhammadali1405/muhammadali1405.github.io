@@ -51,12 +51,19 @@ function showContactPopup(event, displayValue, action) {
     const popup = document.getElementById('contactPopup');
     popup.classList.add('show');
     
-    // Change icon based on action type
+    // Update contact type label and icon
+    const contactTypeLabel = document.getElementById('contactType');
     const openIcon = document.getElementById('openIcon');
+    const openLabel = document.getElementById('openLabel');
+    
     if (action.startsWith('mailto:')) {
+        contactTypeLabel.textContent = 'Email';
         openIcon.className = 'fas fa-envelope';
+        openLabel.textContent = 'Email';
     } else if (action.startsWith('tel:')) {
+        contactTypeLabel.textContent = 'Phone';
         openIcon.className = 'fas fa-phone';
+        openLabel.textContent = 'Call';
     }
     
     // Show/hide WhatsApp button based on action type

@@ -51,6 +51,22 @@ function showContactPopup(event, displayValue, action) {
     const popup = document.getElementById('contactPopup');
     popup.classList.add('show');
     
+    // Change icon based on action type
+    const openIcon = document.getElementById('openIcon');
+    if (action.startsWith('mailto:')) {
+        openIcon.className = 'fas fa-envelope';
+    } else if (action.startsWith('tel:')) {
+        openIcon.className = 'fas fa-phone';
+    }
+    
+    // Show/hide WhatsApp button based on action type
+    const whatsappBtn = document.getElementById('whatsappBtn');
+    if (action.startsWith('tel:')) {
+        whatsappBtn.style.display = 'block';
+    } else {
+        whatsappBtn.style.display = 'none';
+    }
+    
     // Add overlay
     let overlay = document.querySelector('.popup-overlay');
     if (!overlay) {
@@ -90,6 +106,11 @@ function handleContactAction(action) {
         }).catch(err => {
             console.error('Failed to copy:', err);
         });
+    } else if (action === 'whatsapp') {
+        // Open WhatsApp with the phone number
+        const phoneNumber = currentContactData.value.replace(/\s+/g, '').replace(/[+]/g, '');
+        const whatsappUrl = 'https://wa.me/' + phoneNumber;
+        window.open(whatsappUrl, '_blank');
     }
     
     closeContactPopup();
